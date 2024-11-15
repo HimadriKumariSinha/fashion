@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterThreads - Fashion Closet Guide</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #08072e; }
+        header { background: #848383; padding: 100px 20px; text-align: center; color: #10174e; }
+        header h1 { font-size: 3em; }
+        nav { background: #1d0657; text-align: center; padding: 10px; }
+        a:hover{ color:#616161}
+        nav a { color: #dbdbdb; text-decoration: none; margin: 0 15px; }
+        section { padding: 20px; text-align: center; }
+        h2 { margin-bottom: 20px; font-size: 2.5em; color: #10174e; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .grid-item { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; transition: transform 0.3s ease; }
+        .grid-item:hover { transform: scale(1.05); }
+        .grid-item img { width: 100%; border-radius: 8px; height: 800px; }
+        .grid-item h3 { background: #051341; color: #f8f8f8; padding: 10px; }
+        .hidden-content { display: none; padding: 10px; }
+        footer { background: #080d3b; padding: 20px; text-align: center; color: #ffffff;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Water Threads</h1>
+        <p>Your Guide to a flooded Wardrobe</p>
+    </header>
+    <nav>
+        <a href="#basics">Closet Basics</a>
+        <a href="#styles">Styles</a>
+        <a href="#seasons">Seasons</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="basics">
+        <h2>Closet Essentials</h2>
+        <p>Key pieces that form the foundation of a Diva wardrobe.</p>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/43/ec/5d/43ec5d85ce7f263895e3f19347040394.jpg" alt="White Shirt">
+                <h3>Maroon Silk Shirt</h3>
+                <p class="hidden-content">A versatile classic for any occasion.</p>
+            </div>
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/f4/8e/ba/f48ebae11b22c2f025b3c80bcfac2b2d.jpg" alt="Black Dress">
+                <h3>Black Void Dress</h3>
+                <p class="hidden-content">Perfect for both day and night.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="styles">
+        <h2>Define Your Style</h2>
+        <p>Discover your unique style preferences.</p>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/736x/ee/05/37/ee05371ab9a694689e6e44a1c3d07451.jpg" alt="Casual Style">
+                <h3>Casual</h3>
+                <p class="hidden-content">Relaxed and effortless.</p>
+            </div>
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/7a/b8/df/7ab8dfbfeac78012ac2ec372fda055d0.jpg" alt="Elegant Style">
+                <h3>Elegant</h3>
+                <p class="hidden-content">Sophisticated and flooded.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="seasons">
+        <h2>Seasonal Essentials</h2>
+        <p>Wardrobe essentials for every season.</p>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/f3/14/14/f31414a9c3c061a5f7c15050b33502be.jpg" alt="Winter Coat">
+                <h3>Maroon Leather Jacket</h3>
+                <p class="hidden-content">The "It gotta be this Jacket" Jacket.</p>
+            </div>
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/aa/2f/44/aa2f448940dfa710cea1e1437d170e7f.jpg" alt="Summer Dress">
+                <h3>Summer Dress</h3>
+                <p class="hidden-content">Summer light reflects your Blood.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories">
+        <h2>Accessories</h2>
+        <p>Just like a Blood bag for any vampire.</p>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/736x/e8/0d/a1/e80da1eda8b32f4633e5e31990c6baf5.jpg" alt="Watch">
+                <h3>Vintage Watch</h3>
+                <p class="hidden-content">A classic accessory.</p>
+            </div>
+            <div class="grid-item" onclick="toggleContent(this)">
+                <img src="https://i.pinimg.com/564x/c8/18/49/c81849e8963f16f87401cdefd827f11c.jpg" alt="Scarf">
+                <h3>Silk Scarf</h3>
+                <p class="hidden-content">Makes you feel good.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: WaterThreads@gmail.com</p>
+        <p>Phone: +91-1234567890</p>
+        </section>
+    </footer>
+
+    <script>
+        function toggleContent(element) {
+            const content = element.querySelector(".hidden-content");
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
